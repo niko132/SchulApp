@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_substitution_plan">
+
+    <fragment
+        android:id="@+id/navigation_substitution_plan"
+        android:name="de.niko.schulapp.ui.substitution.SubstitutionPlanFragment"
+        android:label="@string/title_substitution_plan"
+        tools:layout="@layout/fragment_substitution_plan" />
+
+    <fragment
+        android:id="@+id/navigation_timetable"
+        android:name="de.niko.schulapp.ui.timetable.TimetableFragment"
+        android:label="@string/title_timetable"
+        tools:layout="@layout/fragment_timetable" />
+
+    <fragment
+        android:id="@+id/navigation_marks"
+        android:name="de.niko.schulapp.ui.marks.MarksFragment"
+        android:label="@string/title_marks"
+        tools:layout="@layout/fragment_marks" />
+
+    <fragment
+        android:id="@+id/navigation_news"
+        android:name="de.niko.schulapp.ui.news.NewsFragment"
+        android:label="@string/title_news"
+        tools:layout="@layout/fragment_news" />
+
+    <fragment
+        android:id="@+id/navigation_gta"
+        android:name="de.niko.schulapp.ui.gta.GtaFragment"
+        android:label="@string/title_gta"
+        tools:layout="@layout/fragment_gta" />
+
+    <fragment
+        android:id="@+id/navigation_absence"
+        android:name="de.niko.schulapp.ui.absence.AbsenceFragment"
+        android:label="@string/title_absence"
+        tools:layout="@layout/fragment_absence" />
+
+    <activity
+        android:id="@+id/navigation_settings"
+        android:name="de.niko.schulapp.ui.settings.SettingsActivity"
+        android:label="SettingsActivity" />
+</navigation>
